@@ -1,0 +1,156 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #007bff; /* Blue header background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInHeader 1s ease-in-out; /* Apply the fade-in animation */
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move header up by 20px */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move header to its original position */
+    }
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid #007bff; /* Add a 2px border to forms */
+    border-radius: 8px; /* Add an 8px border radius to forms */
+    padding: 20px; /* Add padding to forms */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a glow effect to forms */
+}
+
+input, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 7px; /* Add 7px border-radius to all inputs and buttons */
+    border: 1px solid #ccc; /* Add a border to input fields */
+    transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+button {
+    background-color: #007bff; /* Blue button background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for buttons */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a glow effect to buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+a {
+    color: #007bff; /* Blue links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+button:hover::before {
+    top: -10%;
+    left: -10%;
+}
+
+button:focus::before {
+    background-color: rgba(255, 255, 255, 0.5);
+    top: -10%;
+    left: -10%;
+}
+
+button:focus {
+    z-index: 1;
+}
+
+button:active::before {
+    background-color: rgba(255, 255, 255, 0.8);
+    top: -10%;
+    left: -10%;
+}
+
+/* Input Focus Glow Effect */
+input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
